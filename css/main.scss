@@ -8,7 +8,7 @@
 
 html,
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative; //solves issue with overflowing menu after onclick
     scroll-behavior: smooth;
 }
