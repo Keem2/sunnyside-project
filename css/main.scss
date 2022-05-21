@@ -124,20 +124,24 @@ header {
         list-style: none;
         text-align: center;
     }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 @keyframes ani {
-    0% {
+    from {
         transform: translateX(100%);
     }
 
-    100% {
-        transform: translateX(0);
+    to {
+        transform: translateX(0%);
     }
-
 }
 
-@keyframes ani-back {
+@keyframes aniback {
     0% {
         transform: translateX(0%);
     }
@@ -148,6 +152,14 @@ header {
 
 }
 
+
+.ani {
+    animation: ani 1s ease-in-out forwards;
+}
+
+.ani-back {
+    animation: aniback 1s ease-in-out forwards;
+}
 
 .grid-1 {
     display: grid;

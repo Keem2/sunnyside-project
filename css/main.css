@@ -128,29 +128,34 @@ header {
   text-align: center;
 }
 
+.mobile-menu a {
+  text-decoration: none;
+  color: black;
+}
+
 @-webkit-keyframes ani {
-  0% {
+  from {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @keyframes ani {
-  0% {
+  from {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
-@-webkit-keyframes ani-back {
+@-webkit-keyframes aniback {
   0% {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -161,7 +166,7 @@ header {
   }
 }
 
-@keyframes ani-back {
+@keyframes aniback {
   0% {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -170,6 +175,16 @@ header {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
+}
+
+.ani {
+  -webkit-animation: ani 1s ease-in-out forwards;
+          animation: ani 1s ease-in-out forwards;
+}
+
+.ani-back {
+  -webkit-animation: aniback 1s ease-in-out forwards;
+          animation: aniback 1s ease-in-out forwards;
 }
 
 .grid-1 {
