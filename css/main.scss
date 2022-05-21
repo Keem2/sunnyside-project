@@ -8,7 +8,8 @@
 
 html,
 body {
-    overflow-x: hidden;
+    overflow: hidden;
+    position: relative; //solves issue with overflowing menu after onclick
     scroll-behavior: smooth;
 }
 
@@ -110,7 +111,7 @@ header {
 
 .mobile-menu {
     position: absolute;
-    top: 15%;
+    top: 2%;
     width: 100%;
     z-index: 3;
     height: 55vh;
