@@ -1,2 +1,2 @@
 # sunnyside-project
-Landing page built using HTML, CSS and JavaScript
+Landing page built using HTML, SCSS and JavaScript
